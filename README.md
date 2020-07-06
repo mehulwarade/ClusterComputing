@@ -15,25 +15,3 @@ Github Repo for my honours project and its updates
 |    8    | Custom_files/dnsmasq.conf.save.hosts.auto.sh | Shell script called by dnsmasq.conf whenever a new connection or DHCP request is replied.                                                                                 |
 |    9    |              Custom_files/hosts              | /etc/hosts files for reference                                                                                                                                            |
 |    10   |        Custom_files/restartservices.sh       | Shell script to restart all the required services faster and cleanly                                                                                                      |
-
-
-Brand_new_install_steps.log   =====> In detail steps to replicate my cluster setup
-                                        It includes all the references, known issues, errors and how to solve them and tips
-
-install_cluster_info.txt      =====> Very basic tips and steps for cluster setup
-
-cluster_all_ip_info.log       =====> My cluster info (Ip addresses, router addresses, MAC addresses of Rpi's, etc.)
-
-Custom_files/                 =====> All the files I custom built to help my cluster setup process faster or to achieve a certain functionality.
-
-Custom_files/chroot.sh        =====> Shell script to easily chroot into a simulated client environment. (Mount, chroot, exit, umount)
-
-Custom_files/Custom_files_info.txt => More info on the files in this folder.
-
-Custom_files/dnsmasq.conf     =====> My custom built dnsmasq.conf file to run a shell script (dnsmasq.conf.save.hosts.auto.sh) to autoupdate the hosts files when new client connects
-
-Custom_files/dnsmasq.conf.save.hosts.auto.sh ===> Shell script called by dnsmasq.conf whenever a new connection or DHCP request is replied.
-
-Custom_files/hosts            =====> /etc/hosts files for reference
-
-Custom_files/restartservices.sh ====> Shell script to restart all the required services faster and cleanly
