@@ -259,10 +259,18 @@ sh ~/restartservices.sh
 
 [ IMPORTANT ] Give the first boot fair amount of time. It will work. 
 
+[ ISSUE SOLVED ]: No internet on individual nodes: 
+        Need to add the default gateway by running following commands. If 'route' command does not exist install using "sudo apt install net-tools"
+
+        sudo ip route del 0/0 dev eth0 &> /dev/null
+        a=`route | awk "/${wlan}/"'{print $5+1;exit}'`
+        sudo route add -net default gw 192.168.50.1 netmask 0.0.0.0 dev eth0 metric $a
+                                        √ your router
+
 ================ Known issues =================
 ;Failed to mount /boot
 ;Failed systemd-timesyncd
-;No internet access on individual nodes other than the net-boot node
+;No internet access on individual nodes other than the net-boot node [SOLVED]
 ;The script dnsmasq.conf.save.hosts.auto.sh won't work for the first time. Boot it atleast 2 times for it to auto update the /etc/hosts file
 
 ================ General notes and tips =================

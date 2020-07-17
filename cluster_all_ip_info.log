@@ -8,6 +8,7 @@ Number      Hostname        IP                  MAC                      Descrip
 
 1           boot            192.168.50.200      b8:27:eb:bf:e6:00        main rpi with netboot and nfs files
                             192.168.50.4        b8-27-eb-bf-e6-00        (tftpboot folder)            
+                            192.168.0.13 (wlan0)
 
 2           Master(client)  192.168.50.220      b8:27:eb:d1:40:83        Master node which controls other slave nodes
                             192.168.50.201      b8-27-eb-d1-40-83
